@@ -533,7 +533,7 @@ def detect_methodology(html_body):
     return html_body
 
 
-def md_to_html(md_text, title=None, author="数字生命卡兹克"):
+def md_to_html(md_text, title=None, author=None):
     """将Markdown转为排版精美的HTML"""
 
     # 提取第一个h1作为封面标题
@@ -611,7 +611,7 @@ def main():
     parser.add_argument("input", help="输入的 Markdown 文件路径")
     parser.add_argument("output", help="输出的 HTML 文件路径")
     parser.add_argument("--title", default=None, help="报告标题（默认从Markdown第一个H1提取）")
-    parser.add_argument("--author", default="数字生命卡兹克", help="作者名")
+    parser.add_argument("--author", default=None, help="作者名")
     args = parser.parse_args()
 
     with open(args.input, "r", encoding="utf-8") as f:
