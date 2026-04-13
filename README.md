@@ -1,14 +1,14 @@
-# 横纵分析法 (HV Analysis)
+# 棱镜研究 (Prism Research)
 
 一个用于 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 的深度研究 Skill。当你想系统性地摸清一个产品、公司、概念、技术或人物时，它会引导 Claude 从多个层次进行穿透式研究，最终产出一份排版精美的 HTML 报告（可打印为 PDF）。
 
 ## 它做什么
 
-以「横纵双轴」为骨架——纵轴追时间深度，横轴追竞争广度——然后逐层深挖：
+以纵轴（时间深度）和横轴（竞争广度）为骨架，然后逐层深挖：
 
 | 层次 | 回答的问题 | 主要工具 |
 |------|-----------|---------|
-| 事件层 | 发生了什么，谁在场 | 纵轴叙事 + 横轴竞品对比 |
+| 事件层 | 发生了什么，谁在场 | 多尺度纵轴叙事 + 横轴竞品对比 |
 | 机制层 | 怎么运转的 | 反馈飞轮、因果传动装置、延迟效应 |
 | 结构层 | 为什么必须是这样 | 第一性原理、7 Powers、价值链、不可压缩约束 |
 | 范式层 | 放到最大画布上看 | 技术革命周期（Perez）、产业生命周期、文明趋势 |
@@ -32,13 +32,13 @@
 **macOS / Linux：**
 
 ```bash
-git clone https://github.com/daizhouchen/hv-analysis.git ~/.claude/skills/hv-analysis
+git clone https://github.com/daizhouchen/prism-research.git ~/.claude/skills/prism-research
 ```
 
 **Windows：**
 
 ```bash
-git clone https://github.com/daizhouchen/hv-analysis.git %USERPROFILE%\.claude\skills\hv-analysis
+git clone https://github.com/daizhouchen/prism-research.git %USERPROFILE%\.claude\skills\prism-research
 ```
 
 ### 第二步：安装 Python 依赖
@@ -54,7 +54,7 @@ pip install markdown
 安装完成后，启动 Claude Code，输入类似以下内容即可触发：
 
 ```
-帮我用横纵分析法研究一下 Cursor
+帮我深度研究一下 Cursor
 ```
 
 如果 Claude 开始进行联网搜索和结构化分析，说明安装成功。
@@ -67,14 +67,14 @@ pip install markdown
 - "XX 是怎么回事，帮我深度分析一下"
 - "帮我做个竞品分析"
 - "帮我做个 deep research"
-- "帮我用横纵分析法研究 XX"
+- "帮我摸清楚 XX 这个东西"
 
 Skill 会自动启动多个子 Agent 并行收集信息，构建分析框架，然后按照方法论逐步撰写报告，最后转为 HTML 交付。
 
 ## 文件结构
 
 ```
-hv-analysis/
+prism-research/
 ├── SKILL.md                  # 核心：完整的方法论定义和工作流指令
 ├── references/
 │   └── schema.json           # 分析框架的 JSON Schema（供参考）

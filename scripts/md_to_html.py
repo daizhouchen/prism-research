@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-横纵分析法报告 Markdown → HTML 转换脚本
+深度研究报告 Markdown → HTML 转换脚本
 生成排版精美的HTML文件，可在浏览器中直接打印为PDF。
 
 用法: python md_to_html.py input.md output.html [--title "报告标题"] [--author "作者"]
@@ -537,7 +537,7 @@ def md_to_html(md_text, title=None, author=None):
     """将Markdown转为排版精美的HTML"""
 
     # 提取第一个h1作为封面标题
-    cover_title = title or "横纵分析报告"
+    cover_title = title or "深度研究报告"
     h1_match = re.match(r'^#\s+(.+)$', md_text, re.MULTILINE)
     if h1_match:
         cover_title = h1_match.group(1).strip()
@@ -607,7 +607,7 @@ def md_to_html(md_text, title=None, author=None):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="横纵分析法报告 Markdown → HTML")
+    parser = argparse.ArgumentParser(description="深度研究报告 Markdown → HTML")
     parser.add_argument("input", help="输入的 Markdown 文件路径")
     parser.add_argument("output", help="输出的 HTML 文件路径")
     parser.add_argument("--title", default=None, help="报告标题（默认从Markdown第一个H1提取）")
