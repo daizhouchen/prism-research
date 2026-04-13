@@ -576,7 +576,7 @@ def md_to_html(md_text, title=None, author=None):
     cover_html = f'''
     <div class="cover">
         <div class="cover-title">{cover_title}</div>
-        <div class="cover-subtitle">横纵分析法深度研究报告</div>
+        <div class="cover-subtitle">深度研究报告</div>
         <hr class="cover-divider">
         <div class="cover-meta">
             <div class="author">{author}</div>
@@ -591,7 +591,7 @@ def md_to_html(md_text, title=None, author=None):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{cover_title} — 横纵分析法深度研究报告</title>
+    <title>{cover_title} — 深度研究报告</title>
     <style>{CSS}</style>
 </head>
 <body>
