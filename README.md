@@ -126,6 +126,7 @@ SKILL.md 是纯文本，你可以根据自己的需求修改：
 MIT License
 
 ---
+---
 <!-- daizhouchen-footer-begin -->
 
 Part of [**daizhouchen 实验集**](https://github.com/daizhouchen) → 一个 AI 应用创造者的实验现场。
