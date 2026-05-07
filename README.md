@@ -1,3 +1,13 @@
+<!-- daizhouchen-banner-begin -->
+<p align="center">
+  <img src="assets/hero.png" alt="prism-research" width="100%"/>
+</p>
+
+> **横纵分析法（Horizontal-Vertical Analysis）深度研究 · 索绪尔历时-共时 · 商学院案例 · 竞争战略。**
+>
+> *horizontal-vertical analysis · prism research methodology.*
+<!-- daizhouchen-banner-end -->
+
 # 棱镜研究 (Prism Research)
 
 一个用于 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 的深度研究 Skill。当你想系统性地摸清一个产品、公司、概念、技术或人物时，它会引导 Claude 从多个层次进行穿透式研究，最终产出一份排版精美的 HTML 报告（可打印为 PDF）。
@@ -114,3 +124,9 @@ SKILL.md 是纯文本，你可以根据自己的需求修改：
 ## 许可
 
 MIT License
+
+---
+<!-- daizhouchen-footer-begin -->
+
+Part of [**daizhouchen 实验集**](https://github.com/daizhouchen) → 一个 AI 应用创造者的实验现场。
+<!-- daizhouchen-footer-end -->
